@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Reddit+Mono:wght@200..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 25px auto;
+    padding: 0 40px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+h3 {
+    font-family: "DM sans",sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+header nav ul li {
+    font-family: "DM sans",sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+header button {
+    display: flex;
+    border-radius: 1000px;
+    background: #485C11;
+    padding: 14px 22px;
+    color: #fff;
+    align-items: center;
+    gap: 2px;
+    font-family: "DM sans",sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+header button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(72, 92, 17, 0.25);
+}
+
+header button:active {
+    transform: translateY(0);
+}
+h1 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-size: clamp(48px, 11vw, 160px);
+    line-height: 0.85;
+    letter-spacing: -0.05em;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: clamp(40px, 8vw, 99px);
+}
+header #herotablet {
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+header #herotablet img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+main .trustedBy p{
+    color: #6F6F6F;
+    font-size: 15px;
+    letter-spacing:-0.05em;
+    line-height: 140%;
+}
+main .trustedCompanies {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 130px;
+}
+
+
+.benefits #benefitP {
+    font-family: "Roboto Mono",sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    color: #485C11;
+    margin-bottom: 50px;
+    line-height: 140%;
+}
+.benefits h2 {
+    font-family: "Crimson Text",serif;
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 60px);
+    letter-spacing: -0.03em;
+    line-height: 90%;
+    margin-bottom: 50px;
+}
+.benefits #benefitP2{
+    font-weight: 400;
+    font-size: 15px;
+    color: #6F6F6F;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    margin-bottom: 90px;
+}
+
+.benefitsMore {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width:1279px) {
+    .benefitsMore {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 60px;
+    }
+}
+
+.benefit {
+    border-top: 1px solid #E5E5E5 ;
+}
+
+.benefit img {
+    margin-bottom: 24px;
+    padding-top: 40px;
+}
+.benefit h3 {
+    font-family: "Crimson Text",serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.benefit p{
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    color: #6F6F6F;
+    margin-bottom: 125px;
+}
+
+#Mountains {
+    display: block;
+    margin: 0 auto 120px auto;
+}
+
+#Mountains img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.FeaturesCarousel{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 120px;
+}
+
+@media (max-width:1279px) {
+    .FeaturesCarousel {
+        flex-direction: column;
+        gap: 68px;
+    }
+}
+
+.FeaturesCarousel .left h2{
+    font-family: "Crimson Text",serif;
+    font-size: clamp(34px, 5vw, 60px);
+    letter-spacing: -0.03em;
+    line-height: 90%;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.FeaturesCarousel .left #Leftstart{
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    color: #6F6F6F;
+    margin-bottom: 40px;
+}
+.fourfeatures {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+    border-top: 1px solid #E5E5E5;
+}
+
+.feature h3 {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%   ;
+    color: #6F6F6F;
+}
+
+.feature p{
+    padding: 20px 0;
+    font-size: 15px;
+}
+.feature #lastPFeature {
+    margin-bottom: 40px;
+}
+
+.FeaturesCarousel .right {
+    margin: 0 auto;
+}
+
+.FeaturesCarousel .left button {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -.025em;
+    line-height: 140%;
+    padding: 14px 22px;
+    background: #DFECC6;
+    border-radius: 1000px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.FeaturesCarousel .left button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.FeaturesCarousel .left button:active {
+    transform: translateY(0);
+}
+
+.SpecificationsTable {
+    padding-top: 80px;
+}
+
+.SpecificationsTable #Specs {
+    text-align: center;
+    color: #485C11;
+    font-family: "Roboto Mono";
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.SpecificationsTable h2{
+    text-align: center;
+    font-family: "Crimson Text",serif;
+    font-size: clamp(34px, 5vw, 60px);
+    letter-spacing: -0.03em;
+    line-height: 90%;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.SpecificationsTable #Youneedasolution {
+    text-align: center;
+    color: #6F6F6F;
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.SpecificationsTable #DiscoverMore {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -.025em;
+    line-height: 140%;
+    padding: 14px 22px;
+    background: #DFECC6;
+    border-radius: 1000px;
+    margin-bottom: 80px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.SpecificationsTable #DiscoverMore:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.SpecificationsTable #DiscoverMore:active {
+    transform: translateY(0);
+}
+
+.tables {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 120px;
+}
+
+.table button {
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: -0.08em;
+    line-height: 120%;
+    padding-top: 36px;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+    color: #000000; 
+    transition: color 0.3s ease;
+}
+
+
+.tables:hover .table {
+    opacity: 0.5;
+}
+
+.tables:hover .table button {
+    color: #8C8C8C;
+}
+
+.tables:hover .table:hover {
+    opacity: 1;
+    background: #FFFFFF;
+    border-color: #D6D6D6;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+    transform: translateY(-8px);
+}
+
+.tables:hover .table:hover button {
+    color: #000000;
+    font-weight: 600;
+}
+
+.tableItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 24px 32px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.tableItem:last-child {
+    border-bottom: none;
+}
+
+.tableItem img {
+    flex-shrink: 0;
+}
+
+.table p {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    line-height: 140%;
+}
+
+.Testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+@media (max-width:1279px) {
+    .Testimonial {
+        flex-direction: column;
+        gap: 83px;
+    }
+    .TestimonialRight p{
+        margin-bottom: 162px;
+    }
+    .HODJS {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 162px;
+    }
+    .HODJS p {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+}
+
+.TestimonialLeft {
+    flex: 1;
+    max-width: 590px;
+}
+
+.TestimonialLeft img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.TestimonialRight {
+    flex: 1;
+}
+
+.TestimonialRight h2 {
+    font-family: "Crimson Text",serif;
+    font-weight: 400;
+    font-size: clamp(24px, 3.5vw, 40px);
+    line-height: 105%;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+}
+
+.TestimonialRight .JohnSmith {
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+
+.TestimonialRight .HeadofData {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    letter-spacing: -1%;
+    line-height: 140%;
+    color: #485C11;
+}
+
+.HowItWorks .MYS {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 80px;
+}
+
+.HowItWorks .MYS h2{
+    font-family: "Crimson Text",serif;
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 90%;
+    letter-spacing: -0.03em;
+}
+
+.HowItWorks .MYS button {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -.025em;
+    line-height: 140%;
+    padding: 14px 22px;
+    background: #DFECC6;
+    border-radius: 1000px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.HowItWorks .MYS button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.HowItWorks .MYS button:active {
+    transform: translateY(0);
+}
+
+.UP3 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.UPitems {
+    border-top: 1px solid #E5E5E5;
+    padding-top: 60px;
+}
+
+.UP3 .UPitems  h2{
+    font-weight: 400;
+    font-size: clamp(44px, 7vw, 80px);
+    letter-spacing: -0.04em;
+    line-height: 100%;
+    margin-bottom: 60px;
+    color: #929292;
+}
+
+.UP3 .UPitems h3 {
+    font-family: "Crimson Text",serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.UP3 .UPitems p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    color: #6F6F6F;
+    padding-right: 30px;
+    margin-bottom: 140px;
+}
+.Walleys {
+    margin-bottom: 160px;
+}
+
+.CenteredCTA {
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.CenteredCTA h2{
+    font-family: "Crimson Text",serif;
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 60px);
+    letter-spacing: -0.03em;
+    line-height: 90%;
+    margin-bottom: 40px;
+}
+
+.CenteredCTA p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.CenteredCTA button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    line-height: 140%;
+    padding: 14px clamp(24px, 18vw, 260px);
+    background: #485C11;
+    border-radius: 1000px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    color: #fff;
+    gap: 8px;
+    margin-bottom: 120px;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.CenteredCTA button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.CenteredCTA button:active {
+    transform: translateY(0);
+}
+
+.links ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    gap: 27px;
+}
+
+.links ul li {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    line-height: 140%;
+}
+
+.links ul li a:hover {
+    color: #485C11;
+}
+
+.Credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.CreditsLeft {
+    display: flex;
+    align-items: flex-end;
+    gap: 71px;
+}
+
+.CreditsLeft p,
+.CreditsRight p {
+    color: #485C11;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    line-height: 140%;
+    white-space: nowrap;
+}
+
+.CreditsRight {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 140%;
+    color: #485C11;
+}
+
+
+@media (max-width: 1279px) {
+    main .trustedCompanies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        row-gap: 50px;
+    }
+
+    main .trustedCompanies img:nth-child(1) {
+        justify-self: start;
+    }
+
+    main .trustedCompanies img:nth-child(4) {
+        justify-self: end;
+    }
+
+    main .trustedCompanies img:nth-child(5) {
+        grid-column: 2;
+    }
+}
+
+
+@media (max-width: 799px) {
+    h1 {
+        white-space: normal;
+        font-size: clamp(40px, 12vw, 64px);
+        line-height: 95%;
+    }
+
+    header nav ul,
+    header nav button {
+        display: none;
+    }
+    main .trustedCompanies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 40px 20px;
+    }
+
+    /* Сбрасываем правила планшета для 2 колонок */
+    main .trustedCompanies img:nth-child(1),
+    main .trustedCompanies img:nth-child(4) {
+        justify-self: center;
+    }
+
+    main .trustedCompanies img:nth-child(5) {
+        grid-column: auto;
+    }
+    .benefitsMore {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        gap: 20px;
+        padding-top: 42px;
+    }
+    .UP3 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .UP3 .UPitems p {
+        margin-bottom: 0;
+    }
+
+    .CenteredCTA button {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 24px;
+        margin-bottom: 60px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .Credits {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .CreditsLeft {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+    }
+
+    .CreditsLeft p,
+    .CreditsRight p {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    /* Горизонтальный свайп для сравнительной таблицы */
+    .tables {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 10px 4px 30px 4px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table {
+        flex: 0 0 260px;
+        min-width: 260px;
+        scroll-snap-align: start;
+        margin-bottom: 20px;
+    }
+
+    .tables::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .tables::-webkit-scrollbar-track {
+        background: #F0F0F0;
+        border-radius: 4px;
+    }
+
+    .tables::-webkit-scrollbar-thumb {
+        background: #C4C4C4;
+        border-radius: 4px;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+}
